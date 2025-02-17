@@ -1,0 +1,17 @@
+# Задание номер 1 график 1
+import numpy as np
+import matplotlib.pyplot as plt
+
+a = float(input('Введите коэффициент a: '))
+b = float(input('Введите коэффициент b: '))
+c = float(input('Введите коэффициент c: '))
+x_min = float(input('Введите коэффициент x_min: '))
+x_max = float(input('Введите коэффициент x_max: '))
+x = np.linspace(x_min, x_max, 20)
+
+f_x = a*x+b*np.cos(x)+c
+plt.plot(x, f_x)
+plt.xlabel('x')
+plt.ylabel('f_x')
+plt.title('Мой график')
+plt.show()
